@@ -1,0 +1,94 @@
+@font-face {
+    font-family: cartoon;
+    src: url(/fonts/Ribeye_Marrow/RibeyeMarrow-Regular.ttf);
+}
+
+.skills-container {
+    padding: 100px 20px;
+    margin: 1.5rem 3em;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    background: hsla(0, 0%, 100%, 0.06); 
+    backdrop-filter: blur(20px);
+    
+    h2{
+    position: relative;
+    display: inline-block; 
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 50px; 
+    padding-bottom: 15px; 
+    }
+    h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 130%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    }
+}
+
+.skills-grid {
+    display: grid;
+    /* Creates 6 columns that shrink on smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.skill-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.07); 
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+    img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.6));
+    transition: filter 0.5s ease-in-out, transform 0.5s ease;
+    }
+
+    .skill-name{
+    position: absolute;
+    bottom: 10px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.80rem;
+    font-family: cartoon;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 0.3s ease-in-out;
+    }
+}
+
+.skill-card:hover {
+    transform: translateY(-10px); 
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(20px);
+
+    .skill-name{
+    opacity: 1;
+    transform: translateY(20px); 
+    }
+
+    img{
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    transform: scale(1.2) translateY(-10px);
+    }
+}

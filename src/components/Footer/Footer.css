@@ -1,0 +1,81 @@
+.footer{
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 2rem 1rem 2rem;
+    padding-bottom: 2rem;
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    h2{
+        text-align: center;
+        color: white;
+        font-size: clamp(1rem, 5vw, 4rem);
+        margin-bottom: 2rem;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 10px;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+        flex: 1 1 0;
+    }   
+    li{
+        flex: 1;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        padding: 0 1rem 1rem 1rem;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(174, 0, 255, 0.5);
+        transition: all 0.5s ease;
+        font-size: clamp(1rem, 2vw, 2rem);
+        margin: 0 clamp(0.1rem, 0.5vw, 1rem);
+    }
+    li:hover{
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.8), 0 0 50px rgba(185, 35, 255, 1);
+    }
+    li img{
+        height: clamp(1rem, 4vw, 3.125rem );
+        width: clamp(1rem, 4vw, 3.125rem );
+        transform: translateY(12px);
+        background-color: white;
+        border: none;
+        border-radius: 50px;
+        corner-shape: squircle;
+        margin-right: 1rem;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        transition: all 1s ease;   
+    }
+    a:hover{
+        color: white;
+        text-shadow: 0 0 50px rgba(255, 255, 255, 0.8), 0 0 50px rgba(185, 35, 255, 1);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .footer{
+        .contact-list{
+            flex-wrap: wrap;
+        }
+        
+         li{
+            padding: 16px 16px;
+            
+            img{
+                display: none;
+            }        
+        }
+
+    } 
+}

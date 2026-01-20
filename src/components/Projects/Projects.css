@@ -1,0 +1,33 @@
+
+
+.projects{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    
+    
+    h2{
+    color: black;
+    padding: 0.5em 1.5em;
+    font-size: clamp(1rem, 5vw, 5em);
+    position: relative; 
+    display: inline-block;
+    }
+
+    
+    h2::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;   
+    left: -10%;  
+    width: 220%; 
+    height: 3px; 
+    
+    background-color: #000000;
+    border-radius: 10px;    
+    }
+
+}
+
+
+

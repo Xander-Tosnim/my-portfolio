@@ -1,0 +1,50 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    border: 1px solid black;
+    border-radius: 2000px;
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    left: 5%;
+    width: 90%;
+    background-color: white;    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin-right: 10em;
+}
+.navbar ul li {
+  position: relative; 
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.navbar ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;              
+  height: 2px;           
+  background-color: hsl(266, 100%, 50%); 
+  transition: width 0.5s ease; 
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+
+}
+
+.my-logo {
+    height: 50px; /* Controls the size */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin: 1em 5em;
+    
+}
