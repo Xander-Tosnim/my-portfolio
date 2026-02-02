@@ -68,3 +68,13 @@
         corner-shape: squircle;
     }
 }
+
+@media only screen and (max-width: 768px){
+    .about-content{
+        flex: 1;
+    }
+
+    .about-img{
+        flex: 1;
+    }
+}

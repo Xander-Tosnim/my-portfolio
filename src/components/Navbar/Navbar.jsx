@@ -12,7 +12,7 @@ function Navbar() {
                 <li> Projects</li>
                 <li> Resume</li>
                 <li> Contact</li>
-                <li><button>Git Repo</button></li>
+                <li><a href="https://github.com/Xander-Tosnim/my-portfolio" target="_blank"><button>Git Repo</button></a></li>
             </ul>
         </nav>
     );
