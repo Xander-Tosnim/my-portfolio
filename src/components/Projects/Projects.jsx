@@ -1,6 +1,7 @@
 import './Projects.css'
 
 const projects = [
+    {name: "X-Stationery", url: "https://pern-product-store-x-stationery.onrender.com/", sample:"/x-stationery.png", descripton:"An e-commerce example project with basic features. A stationery online shop. Theme and styling with daisyUI."},
     {name: "BookNow", url: "https://booknow-upni.onrender.com", sample:"/book-now.png", descripton:"A React project from Codecademy for bookmarking calendar"},
     {name: "Fotomatic", url: "https://xander-tosnim.github.io/Fotomatic/", sample:"/fotomatic.png", descripton:"A simple HTML and CSS project from Codecademy"},
     {name: "Tea Cozy", url: "https://xander-tosnim.github.io/The-Tea-Cozy/", sample:"/tea-cozy.png", descripton:"A simple HTML and CSS project from Codecademy"}
