@@ -10,9 +10,8 @@ function Navbar() {
                 <li> Home</li>
                 <li> About</li>
                 <li> Projects</li>
-                <li> Resume</li>
                 <li> Contact</li>
-                <li><a href="https://github.com/Xander-Tosnim/my-portfolio" target="_blank"><button>Git Repo</button></a></li>
+                <a href="https://github.com/Xander-Tosnim/my-portfolio" target="_blank"><button><img width="40" height="40" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></button></a>
             </ul>
         </nav>
     );

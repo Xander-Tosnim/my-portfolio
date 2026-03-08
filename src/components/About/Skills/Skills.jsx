@@ -12,6 +12,7 @@ const skills = [
   { name: 'REACT', src: '/icons/react.png' },
   { name: 'NODEJS', src: '/icons/nodejs.png' },
   { name: 'REDUX', src: '/icons/redux.png' },
+  { name: 'ZUSTAND', src: '/icons/zustand.svg' },
   
 ];
 

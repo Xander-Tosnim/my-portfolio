@@ -15,13 +15,16 @@
     display: flex;
     list-style: none;
     gap: 1.5rem;
-    margin-right: 10em;
+    margin-right: 5rem;
 }
 .navbar ul li {
   position: relative; 
   padding-bottom: 5px;
   cursor: pointer;
   font-size: 2rem;
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
 .navbar ul li::after {
@@ -37,7 +40,6 @@
 
 .navbar ul li:hover::after {
   width: 100%;
-
 }
 
 .my-logo {
