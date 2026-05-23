@@ -17,7 +17,7 @@ const skills = [
   { name: 'NODEJS', src: '/icons/nodejs.png' },
   { name: 'REDUX', src: '/icons/redux.png' },
   { name: 'ZUSTAND', src: '/icons/zustand.svg' },
-  
+  { name: 'NestJS', src: '/icons/nestjs.png' },
 ];
 
 function Skills() {
